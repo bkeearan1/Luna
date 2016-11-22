@@ -1,0 +1,66 @@
+html {
+    background-image:
+    linear-gradient(
+        white,black
+      );
+  }
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ccc;
+  padding: 40px;
+  height: calc(100vh - 80px);
+  font-family:Helvetica;
+
+}
+/*Typography*/
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+/*Typography*/
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin-right: 40px;
+}
+
+@media screen and (min-width: 900px) {
+  p,
+  .main-img {
+    width: 48%;
+  }
+
+  p {
+    margin-right: 4%;
+  }
+  img{
+      margin: 0 auto;
+  }
+
+}
+@media print {
+  html {
+    background-image: none;
+  }
+  body {
+    background-color: #fff;
+  }
+}
